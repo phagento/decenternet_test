@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Decenternet_Test>
+            <version>0.1.0</version>
+        </Decenternet_Test>
+    </modules>
+
+    <frontend>
+        <routers>
+            <hellodecenternet>
+                <use>standard</use>
+                <args>
+                    <module>Decenternet_Test</module>
+                    <frontName>hellodecenternet</frontName>
+                </args>
+            </hellodecenternet>
+        </routers>
+
+        <layout>
+            <updates>
+                <decenternet_test>
+                    <file>decenternet_test.xml</file>
+                </decenternet_test>
+            </updates>
+        </layout>
+    </frontend>
+
+    <global>
+        <models>
+            <decenternet_test>
+                <class>Decenternet_Test_Model</class>
+                <resourceModel>decenternet_test_resource</resourceModel>
+            </decenternet_test>
+            <decenternet_Test_resource>
+                <class>Decenternet_Test_Model_Resource</class>
+            </decenternet_Test_resource>
+        </models>
+
+        <blocks>
+            <decenternet_test>
+                <class>Decenternet_Test_Block</class>
+            </decenternet_test>
+        </blocks>
+
+        <helpers>
+            <decenternet_test>
+                <class>Decenternet_Test_Helper</class>
+            </decenternet_test>
+        </helpers>
+    </global>
+</config>

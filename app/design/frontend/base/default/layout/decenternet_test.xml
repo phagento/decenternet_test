@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @category    Decenternet
+ * @package  Test
+ * @copyright   Copyright (c) 2018
+ * @author  Joenas Ejes
+ */
+-->
+
+<layout version="0.1.0">
+    <hellodecenternet_index_index>
+        <reference name="content">
+            <block type="decenternet_test/message" template="decenternet/message.phtml" />
+        </reference>
+    </hellodecenternet_index_index>
+
+    <hellodecenternet_index_printhello>
+        <update handle="hellodecenternet_index_index" />
+    </hellodecenternet_index_printhello>
+</layout>
